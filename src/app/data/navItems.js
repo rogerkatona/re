@@ -2,19 +2,19 @@
 const navItems = [
     {
         label: "Services",
-        path: "/services",
+        path: "/",
     },
    {
         label: "Industries",
-        path: "/industries",
+        path: "/",
     },
     {
         label: "Blog",
-        path: "/blog",
+        path: "/",
     },
     {
         label: "About",
-        path: "/about",
+        path: "/",
     }
 ];
 

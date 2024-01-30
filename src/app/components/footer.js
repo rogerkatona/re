@@ -13,15 +13,15 @@ export default function Footer() {
     const {isShowing, toggle} = useModal();
 
     return (
-        <footer className="flex flex-col justify-center md:items-center md:px-0 px-6 bg-bg800 py-24 mt-24">
+        <footer className="flex flex-col justify-center md:items-center md:px-0 px-6 bg-rich_black-500 py-24 mt-24">
          <section>
             <div>
                 <div className="flex flex-row items-center pb-4 ">
                     <Link href='/'>
                         <div>
                             <img
-                                src="/image/logo/logo-light@2x 1.png"
-                                width={200}
+                                src="/image/logo/logo@2x.png"
+                                width={400}
                                 alt='Blue Prospect Logo'
                             />
                         </div>

@@ -7,7 +7,7 @@ const Modal = ({ isShowing, onClose }) => {
     }
 
     return (
-        <div className="fixed top-0 left-0 w-full h-full bg-bg800 z-20 " >
+        <div className="fixed top-0 left-0 w-full h-full bg-rich_black-500 z-20 " >
             {/* Your overlay content goes here */}
             <div>
                 <section className="fixed right-0">
@@ -26,13 +26,13 @@ const Modal = ({ isShowing, onClose }) => {
                 <section className="max-w-8xl mx-auto pt-12 ">
                     <div className="lg:p-12 p-6 h-full">
                         <div className="font-bebasNeue text-6xl text-bg100  flex flex-row  pb-4 ">
-                            Contact
+                            Contact Us
                         </div>
                         <div className="text-bg200 flex flex-row pb-8">
                             <div >
                                 <span className="md:block hidden" >We value your feedback, inquiries, and suggestions. Our dedicated support team is ready to provide you with the information and assistance you need. </span>
                                 <span>Feel free to reach out to us via the contact form below, and we'll get back to you as soon as possible.</span>
-                                <span className="md:block hidden" >Thank you for choosing Blue Prospect – where customer satisfaction is our priority.</span>
+                                <span className="md:block hidden" >Thank you for choosing RE Marketing and Communications – where customer satisfaction is our priority.</span>
                             </div>
                         </div>
                         <Form/>
