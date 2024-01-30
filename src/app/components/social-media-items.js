@@ -11,8 +11,8 @@ const SocialMedia = props => (
             <span>
                 <img
                     src={props.src}
-                    height={32}
-                    width={32}
+                    height={27}
+                    width={27}
                     alt={props.alt}
                 />
             </span>

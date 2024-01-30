@@ -10,14 +10,14 @@ export default function Promo(props) {
 
     return (
 
-        <section className="pt-12 md:px-12 p-12">
+        <section className="pt-12 md:px-12 px-6">
             {filteredItem
                 .map(filteredItem => (
                     <div
                         key={filteredItem.id}
                         >
-                        <section className="flex flex-col md:px-0 px-12 mx-auto md:max-w-8xl bg-platinum-800">
-                            <div className="px-36 py-12 text-center">
+                        <section className="flex flex-col lg:px-36 px-6 mx-auto md:max-w-8xl bg-platinum-800">
+                            <div className="text-center">
                                 <div className='font-bebasNeue text-3xl text-rich_black'>{filteredItem.headline}</div>
                                 <div className="font-raleway text-4xl text-rich_black py-4">{filteredItem.title}</div>
                                 <div className="text-rich_black text-xl pb-4">{filteredItem.text}</div>
