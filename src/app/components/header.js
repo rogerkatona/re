@@ -16,7 +16,7 @@ export default function Header() {
     const {isShowing, toggle} = useModal();
 
     return (
-        <header className="bg-rich_black-500 sticky top-0">
+        <header className="bg-rich_black-500 sticky top-0 z-20">
             <div className="lg:flex lg:flex-row lg:justify-between lg:items-center lg:mx-auto lg:max-w-8xl py-6 xl:px-0 md:px-12 px-6">
             <section>
                     <Link href='/'>
