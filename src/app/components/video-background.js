@@ -7,7 +7,7 @@ const VideoBackground = () => {
                 autoPlay
                 muted
                 loop
-                className="object-cover object-center w-full h-full opacity-10 "
+                className="object-cover object-center w-full h-full opacity-40 "
             >
                 <source src="/video/AdobeStock_574452973_Video_4K_Preview.mov" type="video/mp4" />
                 Your browser does not support the video tag.
