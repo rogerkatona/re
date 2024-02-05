@@ -9,7 +9,7 @@ const VideoBackground = () => {
                 loop
                 className="object-cover object-center w-full h-full opacity-40 "
             >
-                <source src="/video/AdobeStock_574452973_Video_4K_Preview.mov" type="video/mp4" />
+                <source src="/video/AdobeStock_637896078_Video_HD_Preview.mov" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </div>
