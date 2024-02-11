@@ -16,16 +16,23 @@ export default function Header() {
     const {isShowing, toggle} = useModal();
 
     return (
-        <header className="bg-rich_black-500 sticky top-0 z-20 md:px-12">
-            <div className="lg:flex lg:flex-row lg:justify-between lg:items-center lg:mx-auto lg:max-w-8xl py-6 xl:px-0 lg:px-12 px-6">
+        <header className="bg-rich_black-500 sticky top-0 z-20 xl:px-12 px-6">
+            <div className="container mx-auto max-w-8xl flex justify-between items-center py-4">
             <section>
                     <Link href='/'>
                         <div>
-                            <div className="flex flex-row items-center">
-                                <div className="">
+                            <div className="">
+                                <div className="sm:block hidden">
                                     <img
                                         src="/image/logo/logo@2x.png"
                                         width={400}
+                                        alt="RE Marketing and Communication"
+                                    />
+                                </div>
+                                <div className="sm:hidden block">
+                                    <img
+                                        src="/image/logo/logo-small@2x.png"
+                                        width={36}
                                         alt="RE Marketing and Communication"
                                     />
                                 </div>
@@ -34,14 +41,14 @@ export default function Header() {
                     </Link>
                 </section>
              <div>
-                    <section className="absolute lg:right-10 right-8 top-6">
+                    <section className="absolute lg:right-10 right-6 top-5">
                         <button
                             className="lg:hidden text-secondary hover:text-primary focus:appearance-none border-none"
                             onClick={handleClick}>
                             <svg
                                 className='w-6 h-6 '
                                 fill='none'
-                                stroke='#424548'
+                                stroke='#d2d2d2'
                                 viewBox='0 0 24 24'
                                 xmlns='http://www.w3.org/2000/svg'
                             >

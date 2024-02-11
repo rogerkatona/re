@@ -18,7 +18,7 @@ export default function FeatureIndex(props) {
                             key={filteredItem.id}
                             className="md:px-12 px-6 pt-12 bg-platinum-900">
 
-                            <div className={`flex flex-col max-w-8xl mx-auto ${filteredItem.featuredID % 2 !== 0  ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
+                            <div className={`container mx-auto max-w-8xl flex flex-col justify-between ${filteredItem.featuredID % 2 !== 0  ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
                                 <div className=''>
                                     <img
                                         src={filteredItem.src}
@@ -26,9 +26,9 @@ export default function FeatureIndex(props) {
                                         alt={'Featured service'}
                                     />
                                 </div>
-                                <div className={`lg:pt-0 pt-12 lg:w-5/6 w-full ${filteredItem.featuredID % 2 !== 0  ? 'lg:pl-6' : 'lg:pr-6'}`}>
+                                <div className={`lg:pt-0 pt-6 lg:w-5/6 w-full ${filteredItem.featuredID % 2 !== 0  ? 'lg:pl-6' : 'lg:pr-6'}`}>
                                     <div className="">
-                                        <div className='text-platinum-200 '>
+                                        <div className='text-platinum-200'>
                                             <Link href={filteredItem.featuredHREF}>
                                                 <span className=' hover:text-platinum-100 hover:underline uppercase text-xs'>{filteredItem.featuredURL}</span>
                                             </Link>
@@ -36,7 +36,7 @@ export default function FeatureIndex(props) {
                                         <div className='font-bebasNeue text-3xl text-platinum-200'>
                                             {filteredItem.featuredHeader}
                                         </div>
-                                        <div className='font-raleway text-4xl text-platinum-100 py-4'>
+                                        <div className='font-raleway text-4xl text-platinum-100 py-2'>
                                             {filteredItem.title}
                                         </div>
                                         <div className="uppercase text-xs text-platinum-300">

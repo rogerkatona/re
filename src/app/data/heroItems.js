@@ -8,13 +8,13 @@ const heroItems = [
     {
         id:2,
         label: "Services",
-        description: "We offer comprehensive video production services, seamlessly blending creative storytelling, cutting-edge technology, and professional execution to bring your vision to life and captivate audiences across diverse industries.",
+        description: "RE is equipped to provide end-to-end solutions, ensuring that businesses have a cohesive and effective marketing strategy across various channels. Clients can choose a combination of these planning, demand, and lead generation services based on their specific goals and needs. ",
         background: "dark",
     },
     {
         id:3,
-        label: "Why Blue Prospect?",
-        description: "We offer world class comprehensive video production services, seamlessly blending creative storytelling, cutting-edge technology, and professional execution to bring your vision to life and captivate audiences across diverse industries.",
+        label: "Industries",
+        description: "At RE, we specialize in delivering strategic marketing solutions tailored to a diverse range of industries. Our commitment to excellence and innovation allows us to partner with organizations across various sectors, providing impactful marketing strategies that drive growth and success.",
         background: "dark",
     },
     {

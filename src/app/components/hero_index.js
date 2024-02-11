@@ -17,10 +17,10 @@ export default function HeroIndex({ children, home }) {
         <section className="">
 
                 <VideoBackground />
-                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center p-4">
                     <div className="text-center">
                         <div>
-                            <div className="whitespace-break-spaces font-raleway font-bold lg:text-7xl text-5xl text-platinum pb-4">
+                            <div className="max-w-8xl mx-auto font-raleway font-bold md:text-7xl text-5xl text-platinum ">
                                 <p>Where Creativity Meets Conversion:</p>
                                 <p>Unleash the Power of Your Brand.</p>
                             </div>

@@ -2,11 +2,11 @@
 const navItems = [
     {
         label: "Services",
-        path: "/",
+        path: "/services",
     },
    {
         label: "Industries",
-        path: "/",
+        path: "/industries",
     },
     {
         label: "Blog",

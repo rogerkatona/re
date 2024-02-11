@@ -9,14 +9,14 @@ export default function Service(props) {
 
     return (
         <>
-                <section className="flex flex-col px-6">
+                <section className="pt-12 xl:px-12 px-6">
                     {filteredItem
                         .filter(filteredItem => filteredItem.featured === "false")
                         .map(filteredItem => (
                             <section>
                                 <div
                                     key={filteredItem.id}
-                                    className={`flex lg:flex-row flex-col max-w-8xl mx-auto pt-24  ${filteredItem.id % 2 === 0  ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
+                                    className={`container mx-auto max-w-8xl flex flex-col justify-between  ${filteredItem.id % 2 === 0  ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
 
                                     <div className="">
                                         <img
@@ -26,10 +26,12 @@ export default function Service(props) {
                                             alt={filteredItem.alt}
                                         />
                                     </div>
-                                    <div className={`${filteredItem.id % 2 === 0  ? 'lg:pr-12 lg:pt-0 pt-12' : 'lg:pl-12 lg:pt-0 pt-12'} lg:w-4/5 w-full `}>
-                                        <div className='font-bebasNeue text-4xl text-bg100 border-b'>{filteredItem.number}</div>
-                                        <div className='font-raleway text-4xl text-bg100 pt-4'>{filteredItem.title}</div>
-                                        <ul className="text-left list-disc pt-2 text-bg200 pl-4">
+                                    <div className={`lg:pt-0 pt-6 lg:w-5/6 w-full ${filteredItem.featuredID % 2 !== 0  ? 'lg:pl-6' : 'lg:pr-6'}`}>
+                                        <div className='font-bebasNeue text-4xl text-platinum-300 border-b'>{filteredItem.number}</div>
+                                        <div className='font-raleway text-4xl text-platinum-200 pt-4'>{filteredItem.title}</div>
+                                        <div className='text-platinum-200 pt-4'>{filteredItem.description}</div>
+                                        <div className='text-platinum-100 pt-4'>{filteredItem.listTitle}</div>
+                                        <ul className="text-left list-disc pt-2 text-platinum-200 pl-4">
                                             {filteredItem.list.map((list) =>
                                                 <li key={`${filteredItem.id}-${filteredItem.featuredID}`}>
                                                     {list}

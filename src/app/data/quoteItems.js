@@ -2,8 +2,8 @@ const quoteItems = [
     {
         id:0,
         text: "Working with RE was transformative for our brand. They crafted our brand story with finesse and insight, and understood the power of storytelling in marketing, and the result is not just a brand – it's an experience. They've elevated us beyond products and services; they've given us a voice, and for that, we're not just clients, we're partners in storytelling excellence.",
-        author: "Happy Customer",
-        title: 'Happy customer service',
+        author: "VP of Marketing",
+        title: 'Global Life Sciences Organization',
         src: '/image/quote-image.png',
     },
     {
