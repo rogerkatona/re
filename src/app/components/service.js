@@ -22,7 +22,7 @@ export default function Service(props) {
                                         <img
                                             className=""
                                             src={filteredItem.src}
-                                            width={1000}
+                                            width={2000}
                                             alt={filteredItem.alt}
                                         />
                                     </div>
@@ -30,8 +30,8 @@ export default function Service(props) {
                                         <div className='font-bebasNeue text-4xl text-platinum-300 border-b'>{filteredItem.number}</div>
                                         <div className='font-raleway text-4xl text-platinum-200 pt-4'>{filteredItem.title}</div>
                                         <div className='text-platinum-200 pt-4'>{filteredItem.description}</div>
-                                        <div className='text-platinum-100 pt-4'>{filteredItem.listTitle}</div>
-                                        <ul className="text-left list-disc pt-2 text-platinum-200 pl-4">
+                                        <div className='text-platinum-200 pt-4'>{filteredItem.listTitle}</div>
+                                        <ul className="text-left list-disc pt-2 text-platinum-300 pl-4 text-sm">
                                             {filteredItem.list.map((list) =>
                                                 <li key={`${filteredItem.id}-${filteredItem.featuredID}`}>
                                                     {list}
