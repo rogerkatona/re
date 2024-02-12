@@ -23,7 +23,7 @@ export default function Services() {
             </section>
             <Service type="service"/>
             <GridMedia type="service"/>
-            <Quote id={0}/>
+            <Quote id={1}/>
             <section className="xl:px-12 px-6 pt-12">
                 <div className="container mx-auto max-w-8xl flex items-center">
                     <div className='font-raleway text-4xl text-platinum-200'>

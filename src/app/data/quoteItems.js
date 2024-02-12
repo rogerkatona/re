@@ -8,17 +8,17 @@ const quoteItems = [
     },
     {
         id:1,
-        text: "Roger Katona's comprehensive user experience audit uncovered significant issues that impacted our prospective customers trying to book our services online. An incredible discovery that increased our online bookings by 15%!",
-        author: "Dr. Kalpana Sundar",
-        title: 'Kalvera, Owner',
-        src: '/image/icon/quote-image.svg',
+        text: "Rina and Roger transformed our digital presence with their exceptional social media strategy. Their expertise, detail and  dedication surpassed our expectations, delivering tangible results that converted followers and likes into lifelong customers.",
+        author: "Director of Digital Marketing",
+        title: 'Full-Service Boutique Hotel',
+        src: '/image/quote-image.png',
     },
     {
         id:2,
         text: "Roger is without a doubt the best UX/UI person I have ever interacted with. He sees more than the pretty pictures and the UX concepts. He gets into the real business goals and routinely pulls out the simple straight forward solution that no one else saw. I have seen Roger unravel a mess that was handed to him and turn it into a gem that was the model for how to do things going forward. I tell people I want guys that are always leaning forward. Looking to do bigger, better, more. Roger is one of those guys.",
         author: "John McPeek",
         title: 'Sr Cloud Architect at Black Knight',
-        src: '/image/quote-image.svg',
+        src: '/image/quote-image.png',
     },
 ];
 

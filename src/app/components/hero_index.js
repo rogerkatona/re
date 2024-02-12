@@ -39,7 +39,7 @@ export default function HeroIndex({ children, home }) {
         */}
 
             <section className="bg-hero-index bg-cover md:bg-fixed bg-no-repeat md:bg-center">
-                <div className="flex lg:flex-row flex-col-reverse justify-center lg:items-center lg:mx-auto lg:max-w-8xl h-screen90vh md:px-0">
+                <div className="flex lg:flex-row flex-col-reverse justify-center lg:items-center lg:mx-auto lg:max-w-8xl h-screen90vh md:px-0 px-4">
                     <div className="text-center">
                         <div>
                             <div className="font-raleway font-bold lg:text-7xl text-5xl text-platinum-700 pb-4 ">Where Creativity Meets Conversion: Unleash the Power of Your Brand.</div>
