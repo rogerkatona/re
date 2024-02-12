@@ -14,7 +14,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
             'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'hero-index': "url('/image/background/background-hero-index.jpg')",
+        'hero-index': "url('/image/background/bgIndex-01.jpg')",
         'banner-01': "url('/image/bg-banner-01.jpg')",
         'banner-02': "url('/image/bg-banner-02.jpg')",
         'hero-blog': "url('/image/background/hero-blog.jpg')",

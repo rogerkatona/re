@@ -34,9 +34,9 @@ export default function Footer() {
                 <NavBar navItems={navItems}/>
             </div>
             <div className="flex flex-col md:justify-center md:items-center ">
-                <div className='flex flex-row pb-4'>
+            {/* <div className='flex flex-row pb-4'>
                     <SocialMediaItem socialMediaItems={socialMediaItems}/>
-                </div>
+                </div>*/}
                 <Link href=''>
                     <button
                         onClick={toggle}

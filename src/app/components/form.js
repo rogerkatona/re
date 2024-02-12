@@ -67,14 +67,14 @@ export const Form = ({ initialRef}) => {
                 })
             } catch (e) {
                 setToastMessage({message:(
-                        <div className="text-bg100 font-bold absolute bottom-0 -mb-16">
+                        <div className="text-platinum-900 font-bold absolute bottom-0 -mb-16">
                             Deepest apologies.  There was an error with your request.  Please try again later.
                         </div>
                     )})
             }
         } else {
             setToastMessage({message:(
-                    <div className="text-bg100 font-bold absolute -bottom-1 -mb-16 ">
+                    <div className="text-platinum-900 font-bold absolute -bottom-1 -mb-16 ">
                         Please verify all fields are filled out.
                     </div>
                 )})
@@ -97,7 +97,7 @@ export const Form = ({ initialRef}) => {
                     </label>
                     <input
                         ref={initialRef}
-                        className="text-bg500 border py-3 px-4 mb-4"
+                        className="text-platinum-500 border py-3 px-4 mb-4"
                         placeholder="Enter your name"
                         value={formState.name}
                         onChange={(e) =>
@@ -110,7 +110,7 @@ export const Form = ({ initialRef}) => {
                         Email*
                     </label>
                     <input
-                        className="text-bg500 border py-3 px-4 mb-4"
+                        className="text-platinum-500 border py-3 px-4 mb-4"
                         placeholder="yourname@email.com"
                         type="email"
                         value={formState.email}
@@ -127,7 +127,7 @@ export const Form = ({ initialRef}) => {
                         </label>
                         <div>
                         <textarea
-                            className="text-bg500  w-full border border-blue800 py-3 px-4 mb-4 "
+                            className="text-platinum-500  w-full border border-blue800 py-3 px-4 mb-4 "
                             rows="3"
                             value={formState.contactMessage}
                             onChange={(e) =>
@@ -140,7 +140,8 @@ export const Form = ({ initialRef}) => {
                 <div className="">
                     <button
                         type="submit"
-                        className="bg-yellow900 hover:bg-yellow600 hover:text-bg100 text-xs text-bg100 uppercase px-4 py-3 rounded-lg  md:mt-0 mt-6"> Submit
+                        className="bg-vanilla-200 hover:bg-vanilla-100 text-xs text-platinum hover:text-platinum-300 uppercase px-4 py-3 rounded-lg">
+                        Submit
                     </button>
                 </div>
             </div>

@@ -29,7 +29,7 @@ const Modal = ({ isShowing, onClose }) => {
                             Contact Us
                         </div>
                         <div className="text-bg200 flex flex-row pb-8">
-                            <div >
+                            <div className="flex flex-col space-y-2">
                                 <span className="md:block hidden" >We value your feedback, inquiries, and suggestions. Our dedicated support team is ready to provide you with the information and assistance you need. </span>
                                 <span>Feel free to reach out to us via the contact form below, and we'll get back to you as soon as possible.</span>
                                 <span className="md:block hidden" >Thank you for choosing RE Marketing and Communications – where customer satisfaction is our priority.</span>

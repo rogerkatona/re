@@ -10,10 +10,11 @@ export default function Home() {
     <main>
         <HeroIndex/>
         <Promo id={0}/>
-        <FeatureIndex  featured="true" type="work"/>
+        <FeatureIndex  featured="true" type="service"/>
         <Quote id={0}/>
-        <FeatureIndex  featured="true" type="blog"/>
-        <Promo id={0}/>
+        <FeatureIndex  featured="true" type="industry"/>
+        <Promo id={1}/>
+        <FeatureIndex  featured="true" type="team"/>
     </main>
   )
 }

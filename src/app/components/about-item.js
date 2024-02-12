@@ -1,4 +1,5 @@
 import serviceItems from "../data/serviceItems";
+import Link from "next/link";
 
 export default function AboutItem(props) {
 
@@ -8,47 +9,47 @@ export default function AboutItem(props) {
 
     return (
         <>
-            {filteredItem
-                .filter(filteredItem => filteredItem.type === props.type)
-                .map(filteredItem => (
+            <section className="xl:px-12 px-6">
+                {filteredItem
+                    .map(filteredItem => (
+                        <section>
+                            <div
+                                key={filteredItem.id}
+                                className={`container mx-auto max-w-8xl flex flex-col justify-between pt-12   ${filteredItem.id % 2 === 0  ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
 
-                    <section
-                        key={filteredItem.id}
-                        className="md:px-12 px-6 pt-24 bg-bg500">
-
-                        <div className={`flex flex-col max-w-8xl mx-auto ${filteredItem.featuredID % 2 !== 0  ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
-                            <div className=' '>
-                                <img
-                                    src={filteredItem.src}
-                                    width={1750}
-                                    alt={'Featured Article'}
-                                />
-                            </div>
-                            <div className={`lg:pt-0 pt-12 ${filteredItem.featuredID % 2 !== 0  ? 'lg:pl-6' : 'lg:pr-6'}`}>
                                 <div className="">
-                                    <div className='font-bebasNeue text-4xl text-bg50  border-b border-bg-bg50 mb-4'>{filteredItem.number}</div>
-
-                                    <div className='font-raleway text-4xl text-bg100 py-4'>
-                                        {filteredItem.title}
-                                    </div>
-                                    <div className='text-bg200 pb-6'>{filteredItem.description}</div>
-                                    <div className="flex flex-row">
-                                        <div className={`${filteredItem.isButtonActive === 'true'  ? 'block' : 'hidden'}  pr-2`}>
-                                            <a
-                                                target={"_blank"}
-                                                href={filteredItem.featuredHREF}>
-                                                <button className="hover:bg-yellow600 hover:text-bg500 text-xs text-yellow500 uppercase px-4 py-3 border border-yellow500 rounded-lg">
-                                                    {filteredItem.featuredButtonLabel}
-                                                </button>
-                                            </a>
-                                        </div>
+                                    <img
+                                        className=""
+                                        src={filteredItem.src}
+                                        width={2000}
+                                        alt={filteredItem.alt}
+                                    />
+                                </div>
+                                <div className={`lg:pt-0 pt-6 lg:w-5/6 w-full ${filteredItem.featuredID % 2 !== 0  ? 'lg:pl-6' : 'lg:pr-6'}`}>
+                                    <div className='font-bebasNeue text-4xl text-platinum-300 border-b'>{filteredItem.number}</div>
+                                    <div className='font-raleway text-4xl text-platinum-200 pt-4'>{filteredItem.title}</div>
+                                    <div className='text-platinum-200 pt-4'>{filteredItem.description}</div>
+                                    <div className='text-platinum-200 pt-4'>{filteredItem.listTitle}</div>
+                                    <ul className="text-left list-disc pt-2 text-platinum-300 pl-4 text-sm">
+                                        {filteredItem.list.map((list) =>
+                                            <li key={`${filteredItem.id}-${filteredItem.featuredID}`}>
+                                                {list}
+                                            </li>
+                                        )}
+                                    </ul>
+                                    <div className={`${filteredItem.isButtonActive === 'true'  ? 'block' : 'hidden'} pt-0`}>
+                                        <Link href={filteredItem.buttonHref}>
+                                                <span
+                                                    className="bg-newYellow.800 hover:bg-newYellow.900 hover:text-gray.100 text-xs text-gray.100 uppercase px-4 py-3 rounded-lg">
+                                                    {filteredItem.buttonText}
+                                                </span>
+                                        </Link>
                                     </div>
                                 </div>
-
                             </div>
-                        </div>
-                    </section>
-                ))}
+                        </section>
+                    ))}
+            </section>
         </>
     )
 }

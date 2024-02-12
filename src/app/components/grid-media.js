@@ -4,20 +4,17 @@ import Image from "next/image";
 
 export default function GridMedia(props) {
 
+    let filteredItem = gridItems.filter(function (item){
+        return item.type === props.type
+    });
+
     return (
-        <div className="md:px-12 px-6 pt-12">
-            <section  className="max-w-8xl mx-auto">
-                <div>
-                    <div className='font-raleway text-4xl text-platinum-200  '>
-                        Featured industries
-                    </div>
-                </div>
-            </section>
+        <div className="xl:px-12 px-6">
+
             <section>
                 <div  className="flex pt-8">
                     <div className="grid xl:grid-cols-4 gap-2 md:grid-cols-2 grid-cols-1 max-w-8xl mx-auto">
-                        {gridItems
-                            .filter(filteredItem => filteredItem.type === props.type)
+                        {filteredItem
                             .sort((a, b) => {
                                 if (a.id < b.id) {
                                     return -1
@@ -25,14 +22,14 @@ export default function GridMedia(props) {
                                     return 1
                                 }
                             })
-                            .map(gridItems => (
+                            .map(filteredItem => (
 
-                                <div key={gridItems.id} className="">
+                                <div key={filteredItem.id} className="">
 
                                     <div className="group">
                                         <Image
-                                            src={gridItems.src}
-                                            alt={gridItems.alt}
+                                            src={filteredItem.src}
+                                            alt={filteredItem.alt}
                                             width={400}
                                             height={300}
                                             className="w-full h-auto transition-transform transform-gpu grayscale group-hover:grayscale-0"
@@ -42,8 +39,19 @@ export default function GridMedia(props) {
 
                                             <div className="w-full py-4">
                                                 <span>
-                                                    <div className="text-platinum-200">{gridItems.title}</div>
-                                                    <div className="text-platinum-300">{gridItems.description}</div>
+                                                    <div className="text-platinum-200">{filteredItem.title}</div>
+                                                    <div className={`${filteredItem.isListActive === 'true'  ? 'hidden' : 'block'}  pr-2`}>
+                                                        <div className="text-platinum-300">{filteredItem.description}</div>
+                                                    </div>
+                                                    <div className={`${filteredItem.isListActive === 'true'  ? 'block' : 'hidden'}  pr-2`}>
+                                                        <ul className="text-left list-disc pt-2 text-platinum-300 pl-4">
+                                                            {filteredItem.list.map((list) =>
+                                                                <li key={`${filteredItem.id}-${filteredItem.featuredID}`}>
+                                                                    {list}
+                                                                </li>
+                                                            )}
+                                                        </ul>
+                                                    </div>
                                                 </span>
                                                 </div>
 

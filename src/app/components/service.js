@@ -9,9 +9,9 @@ export default function Service(props) {
 
     return (
         <>
-                <section className="pt-12 xl:px-12 px-6">
+                <section className="pt-6 xl:px-12 px-6">
                     {filteredItem
-                        .filter(filteredItem => filteredItem.featured === "false")
+                        .filter(filteredItem => filteredItem.featured === "true")
                         .map(filteredItem => (
                             <section>
                                 <div
@@ -26,7 +26,7 @@ export default function Service(props) {
                                             alt={filteredItem.alt}
                                         />
                                     </div>
-                                    <div className={`lg:pt-0 pt-6 lg:w-5/6 w-full ${filteredItem.featuredID % 2 !== 0  ? 'lg:pl-6' : 'lg:pr-6'}`}>
+                                    <div className={`lg:pt-0 pt-6 lg:w-5/6 w-full ${filteredItem.featuredID % 2 !== 0  ? 'lg:pr-6' : 'lg:pl-6'}`}>
                                         <div className='font-bebasNeue text-4xl text-platinum-300 border-b'>{filteredItem.number}</div>
                                         <div className='font-raleway text-4xl text-platinum-200 pt-4'>{filteredItem.title}</div>
                                         <div className='text-platinum-200 pt-4'>{filteredItem.description}</div>

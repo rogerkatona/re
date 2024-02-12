@@ -20,7 +20,7 @@ const heroItems = [
     {
         id:4,
         label: "About",
-        description: "Welcome to Blue Prospect Studio, where passion meets professionalism. We are a creative powerhouse dedicated to transforming visions into captivating visual stories. Our commitment to excellence and client satisfaction sets us apart in the world of video production.",
+        description: "We love what we do, and are enthusiastic and passionate about your success.  We created our business so we could provide a more personal experience for our customers and friends.",
         background: "dark",
     }
 ];

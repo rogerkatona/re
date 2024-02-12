@@ -12,9 +12,23 @@ export default function Industries() {
             <header className="bg-hero-process min-h-screen25vh max-h-screen25vh bg-cover bg-right bg-no-repeat">
                 <Hero id={3}/>
             </header>
-            <Service type="industries"/>
+            <section className="xl:px-12 px-6 pt-12">
+                <div className="container mx-auto max-w-8xl flex items-center">
+                    <div className='font-raleway text-4xl text-platinum-200'>
+                        Featured industries
+                    </div>
+                </div>
+            </section>
+            <Service type="industry"/>
             <GridMedia type="industry"/>
             <Quote id={0}/>
+            <section className="xl:px-12 px-6 pt-12">
+                <div className="container mx-auto max-w-8xl flex items-center">
+                    <div className='font-raleway text-4xl text-platinum-200'>
+                        All industries
+                    </div>
+                </div>
+            </section>
             <GridList type="industry"/>
         </>
     )

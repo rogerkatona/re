@@ -1,9 +1,9 @@
 "use client"; // This is a client component 👈🏽
 
-import Promo from "@/app/components/promo";
 import Hero from "@/app/components/hero";
 import AboutItem from "@/app/components/about-item";
 import Quote from "@/app/components/quote";
+import AboutTeam from "@/app/components/about-team";
 
 
 export default function About() {
@@ -14,6 +14,9 @@ export default function About() {
             </header>
             <AboutItem type="about"/>
             <Quote id={0}/>
+            <AboutItem type="team"/>
+            <AboutTeam type="team"/>
+
         </>
     )
 }

@@ -2,20 +2,16 @@ import gridListItems from "@/app/data/gridListItems";
 
 export default function GridList(props) {
 
+    let filteredItem = gridListItems.filter(function (item){
+        return item.type === props.type
+    });
+
     return (
-        <div className="md:px-12 px-6 pt-12">
-            <section  className="max-w-8xl mx-auto">
-                <div>
-                    <div className='font-raleway text-4xl text-platinum-200  '>
-                        All industries
-                    </div>
-                </div>
-            </section>
+        <div className="xl:px-12 px-6">
             <section>
                 <div  className="pt-4">
                     <div className="grid xl:grid-cols-1 max-w-8xl mx-auto">
-                        {gridListItems
-                            .filter(filteredItem => filteredItem.type === props.type)
+                        {filteredItem
                             .sort((a, b) => {
                                 if (a.id < b.id) {
                                     return -1
@@ -23,19 +19,30 @@ export default function GridList(props) {
                                     return 1
                                 }
                             })
-                            .map(gridListItems => (
+                            .map(filteredItem => (
 
-                                <div key={gridListItems.id} className="">
+                                <div key={filteredItem.id} className="">
 
                                     <div className="group">
                                         {/* Add overlay or other elements for click effect */}
                                         <div className="flex items-center justify-center">
 
                                             <div className="w-full py-2">
-                                                <span>
-                                                    <div className="text-platinum-200">{gridListItems.title}</div>
-                                                    <div className="text-platinum-300">{gridListItems.description}</div>
-                                                </span>
+                                                <div>
+                                                    <div className="text-platinum-200">{filteredItem.title}</div>
+                                                    <div className={`${filteredItem.isListActive === 'true'  ? 'hidden' : 'block'}  pr-2`}>
+                                                        <div className="text-platinum-300">{filteredItem.description}</div>
+                                                    </div>
+                                                    <div className={`${filteredItem.isListActive === 'true'  ? 'block' : 'hidden'}  pr-2`}>
+                                                        <ul className="text-left list-disc pt-2 text-platinum-300 pl-4">
+                                                            {filteredItem.list.map((list) =>
+                                                                <li key={`${filteredItem.id}-${filteredItem.featuredID}`}>
+                                                                    {list}
+                                                                </li>
+                                                            )}
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
 
                                         </div>

@@ -8,13 +8,13 @@ const navItems = [
         label: "Industries",
         path: "/industries",
     },
-    {
+/*  {
         label: "Blog",
         path: "/",
-    },
+    },*/
     {
         label: "About",
-        path: "/",
+        path: "/about",
     }
 ];
 
