@@ -45,11 +45,6 @@ const gridItems = [
         title:'Sports',
         description:'Leveraging our passion for sports, we create marketing campaigns that resonate with fans, engage sponsors, and enhance the overall brand presence in the sports industry.',
         list: [
-            "Social media strategy development",
-            "Content creation and curation",
-            "Community management",
-            "Social media advertising",
-            "Social media influencers",
         ],
     },
     {
@@ -57,17 +52,13 @@ const gridItems = [
         featuredId:0,
         type:'industry',
         target:'_blank',
-        date:"2023-12-01",
+        isListActive:'false',
+        date:"2024-01-01",
         src: '/image/industry-02.jpg',
         alt:'Video 01',
         title:'Technology',
         description:'In the rapidly evolving technology sector, our agency excels at crafting marketing strategies that highlight innovation, drive product adoption, and build market leadership.',
         list: [
-            "Social media strategy development",
-            "Content creation and curation",
-            "Community management",
-            "Social media advertising",
-            "Social media influencers",
         ],
     },
     {

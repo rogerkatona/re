@@ -81,8 +81,6 @@ export const Form = ({ initialRef}) => {
         }
     };
 
-
-
     return (
         <>
         <form onSubmit={handleContactFormSubmit}>
@@ -128,7 +126,7 @@ export const Form = ({ initialRef}) => {
                         <div>
                         <textarea
                             className="text-rich_black-200  w-full border border-blue800 py-3 px-4 mb-4 "
-                            rows="3"
+                            rows="2"
                             value={formState.contactMessage}
                             onChange={(e) =>
                                 setFormState({ ...formState, contactMessage: e.target.value })

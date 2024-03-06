@@ -4,16 +4,13 @@ import NavBar from '../components/navBar'
 import Link from "next/link";
 import { useState} from 'react'
 import navItems from "../data/navItems";
-import Modal from "./modal";
-import useModal from "../lib/useModal";
 
 
-export default function Header() {
+export default function Header({ toggleModal }) {
 
     const [active, setActive] = useState(false)
     const handleClick = () => setActive(!active)
 
-    const {isShowing, toggle} = useModal();
 
     return (
     <header className="bg-rich_black-500 sticky top-0 z-20 xl:px-12 px-6">
@@ -69,7 +66,7 @@ export default function Header() {
                             <NavBar navItems={navItems}/>
                              <Link href=''>
                                  <button
-                                     onClick={toggle}
+                                     onClick={toggleModal}
                                      className="bg-vanilla-200 hover:bg-vanilla-100 text-xs text-platinum hover:text-platinum-300 uppercase px-4 py-3 rounded-lg md:ml-3 md:mt-0 mt-2">
                                      Contact us
                                  </button>
@@ -77,12 +74,6 @@ export default function Header() {
                     </section>
                 </div>
             </div>
-            <section>
-                <Modal
-                    isShowing={isShowing}
-                    onClose={toggle}
-                />
-            </section>
         </header>
 
     )

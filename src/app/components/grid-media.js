@@ -16,7 +16,7 @@ export default function GridMedia(props) {
                     <div className="grid xl:grid-cols-4 gap-2 md:grid-cols-2 grid-cols-1 max-w-8xl mx-auto">
                         {filteredItem
                             .sort((a, b) => {
-                                if (a.id < b.id) {
+                                if (a.date < b.date) {
                                     return -1
                                 } else {
                                     return 1

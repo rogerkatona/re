@@ -6,7 +6,7 @@ const aboutItems = [
         isActive:"true",
         title: 'Rina Ebert',
         description: "Meet Rina Ebert, an executive leader providing fractional CMO, growth marketing, and sales enablement consulting services for start-up,\n" +
-            "midsize and enterprise technology companies. I work with global leaders of early-stage and scale-stage organizations to\n" +
+            "midsize and enterprise technology companies. Rina works with global leaders of early-stage and scale-stage organizations to\n" +
             "develop revenue generating strategies and plans, brand identity, go-to-market fundamentals including narrative and\n" +
             "positioning framework, sales integration, demand and lead gen activities, content development, website and SEO\n" +
             "optimization, and account based marketing campaigns.",

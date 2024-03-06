@@ -1,10 +1,9 @@
 import Link from "next/link";
-import Modal from "@/app/components/modal";
 import {useState} from "react";
 import useModal from "@/app/lib/useModal";
 import VideoBackground from "@/app/components/video-background";
 
-export default function HeroIndex({ children, home }) {
+export default function HeroIndex({ toggleModal }) {
 
     const [active, setActive] = useState(false)
     const handleClick = () => setActive(!active)
@@ -47,7 +46,7 @@ export default function HeroIndex({ children, home }) {
                         <div>
                             <Link href=''>
                                 <button
-                                    onClick={toggle}
+                                    onClick={toggleModal}
                                     className="bg-vanilla-200 hover:bg-vanilla-100 text-xs text-platinum hover:text-platinum-300 uppercase px-4 py-3 rounded-lg md:ml-3 md:mt-0 mt-6">
                                     Contact us
                                 </button>
@@ -56,12 +55,6 @@ export default function HeroIndex({ children, home }) {
                     </div>
                 </div>
             </section>
-        <section>
-            <Modal
-                isShowing={isShowing}
-                onClose={toggle}
-            />
-        </section>
     </>
     )
 }

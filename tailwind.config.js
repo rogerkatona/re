@@ -19,6 +19,8 @@ module.exports = {
         'banner-02': "url('/image/bg-banner-02.jpg')",
         'hero-blog': "url('/image/background/hero-blog.jpg')",
         'hero-portfolio': "url('/image/background/hero-portfolio.jpg')",
+        'hero-dotr': "url('/image/proposal/dotr/bg-01.jpg')",
+        'hero-dotr_about': "url('/image/proposal/dotr/about-01.jpg')",
         'hero-process': "url('/image/background/hero-process.jpg')",
         'hero-service': "url('/image/background/hero-service.jpg')",
         'hero-about': "url('/image/background/hero-about.jpg')",
