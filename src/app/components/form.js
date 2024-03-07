@@ -36,7 +36,7 @@ export const Form = ({ initialRef}) => {
 
         const location = campaignState === true ? 'campaign-usAudit-blueprospect.com' : 'blueprospect.com'
         const endpoint =
-            "https://ke37371vfe.execute-api.us-east-1.amazonaws.com/default/sendContactEmailRE";
+            "https://ke37371vfe.execute-api.us-east-1.amazonaws.com/default/sendContactEmail";
         // We use JSON.stringify here so the data can be sent as a string via HTTP
         const body = JSON.stringify({
             senderName: formState.name,
