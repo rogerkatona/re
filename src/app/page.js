@@ -19,7 +19,7 @@ export default function Home() {
         <HeroIndex toggleModal={toggleOverlay} />
         <Promo id={0}/>
         <FeatureIndex  featured="true" type="service"/>
-        <Quote id={0}/>
+        <Quote id={4}/>
         <FeatureIndex  featured="true" type="industry"/>
         <Promo id={1}/>
         <FeatureIndex  featured="true" type="team"/>
